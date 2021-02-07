@@ -1,0 +1,27 @@
+$properties-list: (
+                (margin, m),
+                (padding, p)
+);
+
+$sides-list:(
+                (null, a, null),
+                (-top, t, null),
+                (-right, r, null),
+                (-bottom, b, null),
+                (-left, l, null),
+                (-top , y, -bottom),
+                (-left , x, -right)
+);
+
+@each $type, $ty in $properties-list {
+  @each $side, $s, $side2 in $sides-list {
+    @each $label, $value in $space-multipliers {
+      [data-space~=#{$ty}#{$s}#{$label}] {
+        #{$type}#{$side}: $space * $value;
+        @if $side2 != null {
+          #{$type}#{$side2}: $space * $value;
+        }
+      }
+    }
+  }
+}

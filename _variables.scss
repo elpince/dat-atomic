@@ -1,0 +1,68 @@
+/*
+ * Breakpoints
+ */
+$breakpoints: (
+        xs: 450px,
+        s: 768px,
+        m: 920px,
+        l: 1280px,
+        xl: 1440px,
+) !default;
+
+/*
+ * Fonts
+ */
+// font sizes
+$font-size-prefix: null !default;
+$font-sizes: (
+        xs: 0.75rem,
+        s: 1rem,
+        m: 1.25rem,
+        l: 1.5rem,
+        xl: 2rem,
+        xxl: 3rem
+) !default;
+// font weights
+$font-weight-prefix: null !default;
+$font-weights: (
+        thin: 100,
+        extra-light: 200,
+        light: 300,
+        regular: 400,
+        medium: 500,
+        semi-bold: 600,
+        bold: 700,
+        extra-bold: 800,
+        black: 900
+) !default;
+// line heights
+$line-height-prefix: null !default;
+$line-heights: (
+        fit: 1,
+        short: 1.2,
+        normal: 1.4,
+        high: 1.6
+) !default;
+
+/*
+ * Colors
+ */
+$colors: (
+        primary: var(--primary),
+        secondary: var(--secondary),
+        white: var(--white),
+        black: var(--black)
+) !default;
+
+/*
+ * Spacings
+ */
+$space: 1rem !default;
+$space-multipliers: (
+        0: 0,
+        1: .25,
+        2: .5,
+        3: 1,
+        4: 2,
+        5: 3
+) !default;

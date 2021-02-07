@@ -1,0 +1,26 @@
+@each $key, $value in $font-sizes {
+  [data-font~=#{$font-size-prefix}#{$key}] { font-size: #{$value}; }
+}
+@each $key, $value in $font-weights {
+  [data-font~=#{$font-weight-prefix}#{$key}] { font-weight: $value; }
+}
+@each $key, $value in $line-heights {
+  [data-font~=#{$line-height-prefix}#{$key}] { line-height: $value; }
+}
+
+[data-font~=uppercase] {text-transform: uppercase;}
+[data-font~=underline] {text-decoration: underline;}
+
+// white-space
+[data-font~=nowrap] {white-space: nowrap;}
+[data-font~=pre] {white-space: pre;}
+
+// text-align
+[data-font~=center] {text-align: center;}
+[data-font~=left] {text-align: left;}
+[data-font~=right] {text-align: right;}
+
+// vertical-align
+[data-font~=top] {vertical-align: top;}
+[data-font~=middle] {vertical-align: middle;}
+[data-font~=bottom] {vertical-align: bottom;}

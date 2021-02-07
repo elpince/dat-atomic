@@ -1,0 +1,4 @@
+@each $key, $value in $colors {
+  [data-font~=#{$key}] { color: $value; }
+  [data-bg~=#{$key}] { color: $value; }
+}

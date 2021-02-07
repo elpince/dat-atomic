@@ -1,0 +1,27 @@
+// Breakpoints
+@function breakpoint ($key) {
+  @return map_get($breakpoints, $key);
+}
+
+// Fonts
+@function fontSize ($key) {
+  @return map_get($font-sizes, $key);
+}
+
+@function fontWeight ($key) {
+  @return map_get($font-weights, $key);
+}
+
+@function lineHeight ($key) {
+  @return map_get($line-heights, $key);
+}
+
+// Colors
+@function color ($key) {
+  @return map_get($colors, $key);
+}
+
+// Spacing
+@function space ($key) {
+  @return map_get($spacing-values, $key) * 1rem;
+}

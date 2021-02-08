@@ -1,0 +1,103 @@
+[data-flex] {display: flex;}
+[data-flex~=inline] {display: inline-flex;}
+[data-grid] {display: flex;}
+[data-grid~=inline] {display: inline-grid;}
+
+[data-flex~=column] {flex-direction: column;}
+[data-flex~=row] {flex-direction: row;}
+[data-flex~=column-reverse] {flex-direction: column-reverse;}
+[data-flex~=row-reverse] {flex-direction: row-reverse;}
+
+[data-flex~=wrap] {flex-wrap: wrap;}
+[data-flex~=nowrap] {flex-wrap: nowrap;}
+[data-flex~=wrap-reverse] {flex-wrap: wrap-reverse;}
+
+[data-flex~=alit-start],
+[data-grid~=alit-start] {align-items: flex-start;}
+[data-flex~=alit-end],
+[data-grid~=alit-end] {align-items: flex-end;}
+[data-flex~=alit-center],
+[data-grid~=alit-center] {align-items: center;}
+[data-flex~=alit-stretch],
+[data-grid~=alit-stretch] {align-items: stretch;}
+
+[data-grid~=juit-start] {justify-items: flex-start;}
+[data-grid~=juit-end] {justify-items: flex-end;}
+[data-grid~=juit-center] {justify-items: center;}
+[data-grid~=juit-stretch] {justify-items: stretch;}
+
+[data-flex~=juco-start],
+[data-grid~=juco-start] {justify-content: flex-start;}
+[data-flex~=juco-end],
+[data-grid~=juco-end] {justify-content: flex-end;}
+[data-flex~=juco-center],
+[data-grid~=juco-center] {justify-content: center;}
+[data-flex~=juco-around],
+[data-grid~=juco-around] {justify-content: space-around;}
+[data-flex~=juco-between],
+[data-grid~=juco-between] {justify-content: space-between;}
+[data-flex~=juco-evenly],
+[data-grid~=juco-evenly] {justify-content: space-evenly;}
+[data-grid~=juco-stretch] {justify-content: stretch;}
+
+[data-flex~=alco-start],
+[data-grid~=alco-start] {align-content: flex-start;}
+[data-flex~=alco-end],
+[data-grid~=alco-end] {align-content: flex-end;}
+[data-flex~=alco-center],
+[data-grid~=alco-center] {align-content: center;}
+[data-flex~=alco-around],
+[data-grid~=alco-around] {align-content: space-around;}
+[data-flex~=alco-between],
+[data-grid~=alco-between] {align-content: space-between;}
+[data-flex~=alco-evenly],
+[data-grid~=alco-evenly] {align-content: space-evenly;}
+[data-grid~=alco-stretch] {align-content: stretch;}
+
+// child attrs
+[data-col~=alse-start] {align-self: flex-start;}
+[data-col~=alse-end] {align-self: flex-end;}
+[data-col~=alse-center] {align-self: center;}
+[data-col~=alse-stretch] {align-self: stretch;}
+
+[data-col~=juse-start] {justify-self: flex-start;}
+[data-col~=juse-end] {justify-self: flex-end;}
+[data-col~=juse-center] {justify-self: center;}
+[data-col~=juse-stretch] {justify-self: stretch;}
+
+[data-col~=no-grow] {flex-grow: 0;}
+[data-col~=grow] {flex-grow: 1;}
+
+[data-col~=no-shrink] {flex-shrink: 0;}
+[data-col~=shrink] {flex-shrink: 1;}
+
+$cell-direction: (x: column, y: row);
+
+@for $i from 1 through $max-columns {
+  [data-grid~=col#{$i}] {
+    grid-template-columns: repeat($i, minmax($min-column-width, 1fr));
+  }
+  @each $direction, $prop in $cell-direction {
+    [data-col~=#{$direction}#{$i}] {
+      grid-#{$prop}: span #{$i};
+    }
+  }
+}
+
+@each $breakpoint, $value in $breakpoints {
+  @media screen and (min-width: $value) {
+    @for $i from 1 through $max-columns {
+      [data-grid~=#{$breakpoint}#{$i}] {
+        grid-template-columns: repeat($i, minmax($min-column-width, 1fr));
+      }
+    }
+  }
+}
+
+@each $label, $value in $space-multipliers {
+  @each $direction, $prop in $cell-direction {
+    [data-grid~=gap#{$direction}#{$label}] {
+      #{$prop}-gap: $space * $value;
+    }
+  }
+}

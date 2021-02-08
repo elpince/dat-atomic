@@ -23,5 +23,5 @@
 
 // Spacing
 @function space ($key) {
-  @return map_get($spacing-values, $key) * 1rem;
+  @return map_get($space-multipliers, $key) * 1rem;
 }

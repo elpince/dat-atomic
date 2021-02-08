@@ -7,18 +7,32 @@
 @each $key, $value in $line-heights {
   [data-font~=#{$line-height-prefix}#{$key}] { line-height: $value; }
 }
+@each $key, $value in $colors {
+  [data-font~=#{$key}] { color: $value; }
+}
 
+// text-transform
 [data-font~=uppercase] {text-transform: uppercase;}
+[data-font~=capitalize] {text-transform: capitalize;}
+[data-font~=lowercase] {text-transform: lowercase;}
+[data-font~=no-transform] {text-transform: none;}
+
+// text-decoration
 [data-font~=underline] {text-decoration: underline;}
+[data-font~=no-decoration] {text-decoration: none;}
 
 // white-space
 [data-font~=nowrap] {white-space: nowrap;}
+[data-font~=wrap] {white-space: normal;}
 [data-font~=pre] {white-space: pre;}
+[data-font~=pre] {white-space: pre-line;}
+[data-font~=pre] {white-space: pre-wrap;}
 
 // text-align
 [data-font~=center] {text-align: center;}
 [data-font~=left] {text-align: left;}
 [data-font~=right] {text-align: right;}
+[data-font~=justify] {text-align: justify;}
 
 // vertical-align
 [data-font~=top] {vertical-align: top;}

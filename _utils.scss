@@ -7,6 +7,12 @@
 .inline-block {display: inline-block;}
 .inline {display: inline;}
 .block {display: block;}
+.hidden {display: none}
 
 // cursor
 .pointer {cursor: pointer;}
+.default-cursor {cursor: default;}
+.text-cursor {cursor: text;}
+.nope-cursor {cursor: not-allowed;}
+.zoom-in {cursor: zoom-in;}
+.zoom-out {cursor: zoom-out;}

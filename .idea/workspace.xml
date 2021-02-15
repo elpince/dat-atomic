@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe8d8628-b4b8-4c40-9d03-ff4dd7a2d57f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/index.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_colors.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_flex.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_flex-grid.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_fonts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_fonts.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_functions.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_functions.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_resets.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_resets.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_utils.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_utils.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_flex-grid.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/_flex-grid.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_fonts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/_fonts.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_functions.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/_functions.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_spacing.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/_spacing.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_utils.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/_utils.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/index.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,36 +22,68 @@
     <session id="-836219214">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="scss" value="35" />
+          <entry key="md" value="1" />
+          <entry key="php" value="1" />
+          <entry key="scss" value="50" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="SCSS" value="35" />
+          <entry key="Markdown" value="1" />
+          <entry key="PHP" value="1" />
+          <entry key="SCSS" value="50" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="scss" value="1834" />
+          <entry key="md" value="1382" />
+          <entry key="php" value="14" />
+          <entry key="scss" value="1856" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="SCSS" value="1834" />
+          <entry key="Markdown" value="1382" />
+          <entry key="PHP" value="14" />
+          <entry key="SCSS" value="1856" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="401">
+                <caret line="24" column="3" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/static/index.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -66,10 +98,13 @@
         <option value="$PROJECT_DIR$/_fonts.scss" />
         <option value="$PROJECT_DIR$/_utils.scss" />
         <option value="$PROJECT_DIR$/_functions.scss" />
-        <option value="$PROJECT_DIR$/index.scss" />
         <option value="$PROJECT_DIR$/_variables.scss" />
         <option value="$PROJECT_DIR$/_flex-grid.scss" />
         <option value="$PROJECT_DIR$/_resets.scss" />
+        <option value="D:/0 - CLIENTS/evarinvest/redirect.php" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/static/index.scss" />
+        <option value="$PROJECT_DIR$/index.scss" />
       </list>
     </option>
   </component>
@@ -81,7 +116,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-7" />
-    <option name="width" value="1138" />
+    <option name="width" value="1294" />
     <option name="height" value="1407" />
   </component>
   <component name="ProjectView">
@@ -89,7 +124,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -97,10 +131,16 @@
               <item name="dat-atomic" type="b2602c69:ProjectViewProjectNode" />
               <item name="dat-atomic" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="dat-atomic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dat-atomic" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -108,6 +148,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\1 - PERSO\dat-atomic\static" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -133,16 +178,19 @@
       <updated>1612721466439</updated>
       <workItem from="1612721467861" duration="3040000" />
       <workItem from="1612735340087" duration="6908000" />
+      <workItem from="1612769926563" duration="5360000" />
+      <workItem from="1613418216926" duration="819000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9948000" />
+    <option name="totallyTimeSpent" value="16127000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1138" height="1407" extended-state="0" />
+    <frame x="-7" y="0" width="1294" height="1407" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19758813" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15721232" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -155,7 +203,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3299293" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -174,27 +222,12 @@
     <entry file="file://$PROJECT_DIR$/variables/_colors.scss" />
     <entry file="file://$PROJECT_DIR$/variables/_breakpoints.scss" />
     <entry file="file://$PROJECT_DIR$/variables/_fonts.scss" />
-    <entry file="file://$PROJECT_DIR$/_colors.scss">
+    <entry file="file://$PROJECT_DIR$/_colors.scss" />
+    <entry file="file://$PROJECT_DIR$/_grid.scss" />
+    <entry file="file://D:/0 - CLIENTS/evarinvest/redirect.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="2" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_utils.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="34" lean-forward="true" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_grid.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_functions.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+        <state relative-caret-position="51">
+          <caret line="3" column="2" lean-forward="true" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
         </state>
       </provider>
     </entry>
@@ -205,17 +238,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_fonts.scss">
+    <entry file="file://$PROJECT_DIR$/static/_spacing.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+        <state relative-caret-position="68">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_flex-grid.scss">
+    <entry file="file://$PROJECT_DIR$/static/_utils.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1054">
-          <caret line="62" column="50" lean-forward="true" selection-start-line="62" selection-start-column="50" selection-end-line="62" selection-end-column="50" />
+        <state relative-caret-position="221">
+          <caret line="13" column="34" lean-forward="true" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -226,17 +259,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.scss">
+    <entry file="file://$PROJECT_DIR$/static/_flex-grid.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+        <state relative-caret-position="443">
+          <caret line="62" column="50" lean-forward="true" selection-start-line="62" selection-start-column="50" selection-end-line="62" selection-end-column="50" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_spacing.scss">
+    <entry file="file://$PROJECT_DIR$/static/_fonts.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/_functions.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="401">
+            <caret line="24" column="3" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/index.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
         </state>
       </provider>
     </entry>

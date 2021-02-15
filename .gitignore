@@ -3,4 +3,4 @@
 *.sass.map
 *.scss.map
 
-.idea/*
+.idea/

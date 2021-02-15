@@ -3,10 +3,16 @@
 [data-grid] {display: flex;}
 [data-grid~=inline] {display: inline-grid;}
 
+[data-grid~=column] {grid-auto-flow: column;}
 [data-flex~=column] {flex-direction: column;}
+[data-grid~=row] {grid-auto-flow: row;}
 [data-flex~=row] {flex-direction: row;}
 [data-flex~=column-reverse] {flex-direction: column-reverse;}
 [data-flex~=row-reverse] {flex-direction: row-reverse;}
+
+[data-grid~=dense] {grid-auto-flow: dense;}
+[data-grid~=column-dense] {grid-auto-flow: column dense;}
+[data-grid~=row-dense] {grid-auto-flow: row dense;}
 
 [data-flex~=wrap] {flex-wrap: wrap;}
 [data-flex~=nowrap] {flex-wrap: nowrap;}

@@ -81,7 +81,7 @@ $cell-direction: (x: column, y: row);
 
 @for $i from 1 through $max-columns {
   [data-grid~=col#{$i}] {
-    grid-template-columns: repeat($i, minmax($min-column-width, 1fr));
+    grid-template-columns: repeat($i, 1fr);
   }
   @each $direction, $prop in $cell-direction {
     [data-col~=#{$direction}#{$i}] {
@@ -94,7 +94,7 @@ $cell-direction: (x: column, y: row);
   @media screen and (min-width: $value) {
     @for $i from 1 through $max-columns {
       [data-grid~=#{$breakpoint}#{$i}] {
-        grid-template-columns: repeat($i, minmax($min-column-width, 1fr));
+        grid-template-columns: repeat($i, 1fr);
       }
     }
   }

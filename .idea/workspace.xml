@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe8d8628-b4b8-4c40-9d03-ff4dd7a2d57f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_flex-grid.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/_flex-grid.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_fonts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/_fonts.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_functions.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/_functions.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_spacing.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/_spacing.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_utils.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/_utils.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,6 +24,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="gitignore" value="1" />
           <entry key="md" value="1" />
           <entry key="php" value="1" />
           <entry key="scss" value="50" />
@@ -41,11 +34,13 @@
         <counts>
           <entry key="Markdown" value="1" />
           <entry key="PHP" value="1" />
+          <entry key="PLAIN_TEXT" value="1" />
           <entry key="SCSS" value="50" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="gitignore" value="9" />
           <entry key="md" value="1382" />
           <entry key="php" value="14" />
           <entry key="scss" value="1856" />
@@ -55,6 +50,7 @@
         <counts>
           <entry key="Markdown" value="1382" />
           <entry key="PHP" value="14" />
+          <entry key="PLAIN_TEXT" value="9" />
           <entry key="SCSS" value="1856" />
         </counts>
       </usages-collector>
@@ -74,11 +70,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/index.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+            <state relative-caret-position="170">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -105,6 +110,7 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/static/index.scss" />
         <option value="$PROJECT_DIR$/index.scss" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -179,12 +185,12 @@
       <workItem from="1612721467861" duration="3040000" />
       <workItem from="1612735340087" duration="6908000" />
       <workItem from="1612769926563" duration="5360000" />
-      <workItem from="1613418216926" duration="819000" />
+      <workItem from="1613418216926" duration="999000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16127000" />
+    <option name="totallyTimeSpent" value="16307000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1294" height="1407" extended-state="0" />
@@ -299,8 +305,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/index.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        <state relative-caret-position="170">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
         </state>
       </provider>
     </entry>

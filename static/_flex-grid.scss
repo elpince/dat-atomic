@@ -61,21 +61,21 @@
 [data-grid~=alco-stretch] {align-content: stretch;}
 
 // child attrs
-[data-col~=alse-start] {align-self: flex-start;}
-[data-col~=alse-end] {align-self: flex-end;}
-[data-col~=alse-center] {align-self: center;}
-[data-col~=alse-stretch] {align-self: stretch;}
+[data-child~=alse-start] {align-self: flex-start;}
+[data-child~=alse-end] {align-self: flex-end;}
+[data-child~=alse-center] {align-self: center;}
+[data-child~=alse-stretch] {align-self: stretch;}
 
-[data-col~=juse-start] {justify-self: flex-start;}
-[data-col~=juse-end] {justify-self: flex-end;}
-[data-col~=juse-center] {justify-self: center;}
-[data-col~=juse-stretch] {justify-self: stretch;}
+[data-child~=juse-start] {justify-self: flex-start;}
+[data-child~=juse-end] {justify-self: flex-end;}
+[data-child~=juse-center] {justify-self: center;}
+[data-child~=juse-stretch] {justify-self: stretch;}
 
-[data-col~=no-grow] {flex-grow: 0;}
-[data-col~=grow] {flex-grow: 1;}
+[data-child~=no-grow] {flex-grow: 0;}
+[data-child~=grow] {flex-grow: 1;}
 
-[data-col~=no-shrink] {flex-shrink: 0;}
-[data-col~=shrink] {flex-shrink: 1;}
+[data-child~=no-shrink] {flex-shrink: 0;}
+[data-child~=shrink] {flex-shrink: 1;}
 
 $cell-direction: (x: column, y: row);
 

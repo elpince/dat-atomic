@@ -19,11 +19,29 @@ yarn add dat-atomic
 ```
 
 ## Import
-You can load all of dat-atomic with :
+You can load in different ways :
 ```
-@import "node-modules/dat-atomic";
+// Import all in one
+@import "~dat-atomic";
+
+// Import variables and resets separately.
+@import "~dat-atomic/variables";
+@import "~dat-atomic/static";
+@import "~dat-atomic/resets";
+
+// Import each module separately
+@import "~dat-atomic/variables";
+@import "/path/to/my/variables"; // <= custom variables values go here
+@import "~dat-atomic/static/functions";
+@import "~dat-atomic/static/fonts";
+@import "~dat-atomic/static/spacing";
+@import "~dat-atomic/static/flex-grid";
+@import "~dat-atomic/static/utils";
+@import "~dat-atomic/resets";
 ```
-## Flex & grid
+Don't hesitate to ignore the resets file, overwrite the variables, or even entirely replace the variables file with your own (don't forget any variable if you do though).
+
+## Flex/grid
 
 ```
 <div id="first-container" data-flex>...</div>
@@ -53,7 +71,71 @@ No big deal :
     display: inline-grid;
 }
 ```
-## Justifying & aligning :
+### Flex/grid flow :
+Values for `flex-direction` are :
+- column
+- row
+- column-reverse
+- row-reverse
+```
+<div id="first-container" data-flex="row-reverse">...</div>
+<div id="second-container" data-flex="column">...</div>
+```
+*equals to :*
+```
+#first-container {
+    display: flex;
+    flex-direction: row-reverse;
+}
+#second-container {
+    display: flex;
+    flex-direction: column;
+}
+```
+Values for `grid-auto-flow` are :
+- column
+- row
+- dense
+- row-dense
+- column-dense
+```
+<div id="first-container" data-grid="dense">...</div>
+<div id="second-container" data-grid="column-dense">...</div>
+```
+*equals to :*
+```
+#first-container {
+    display: grid;
+    grid-auto-flow: dense;
+}
+#second-container {
+    display: grid;
+    grid-auto-flow: column dense;
+}
+```
+### Flex wrapping
+```
+<div id="first-container" data-flex="wrap">...</div>
+<div id="second-container" data-flex="nowrap">...</div>
+<div id="third-container" data-flex="wrap-reverse">...</div>
+```
+*equals to :*
+```
+#first-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+#second-container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+#third-container {
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+```
+
+### Justifying & aligning :
 Alignement and justification properties are defined with the prefixes :
 - ``justify-content`` : ``juco-``
 - ``justify-items`` : ``juit-`` *(Warning : ``justify-items`` is NOT a valid property of the flex layout, it'll only effect the grid layout)*
@@ -66,230 +148,56 @@ Followed by the wanted value :
 - ``center`` : ``center``
 - ``stretch`` : ``stretch`` *(Warning : ``stretch`` is NOT a valid value for ``justify-content`` and ``align-content`` in the flex layout, it'll only effect the grid layout)*
 ```
-<div id="first-container" data-flex="inline">...</div>
-<div id="second-container" data-grid="inline">...</div>
+<div id="first-container" data-flex="juco-center alit-center alco-center">...</div>
+<div id="second-container" data-grid="juit-end juco-end alco-stretch alit-center">...</div>
 ```
 *equals to :*
 ```
-#some-id {
+#first-container {
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     align-content: start;
 }
-```
-#### Customize flex children (col attribute) :
-Syntax for column size value is {breakpoint}{column-width}.
-
-**{breakpoint}** can be :
-- xs
-- sm
-- md
-- lg
-- xl
-
-It corresponds to breakpoints set in "_variables.scss", xs being the default (min-width: 0) value.
-
-**{column-width}** is an integer from 1 to 12 that defines column width as width: 100% / 12 * {column-width}.
-```
-<div id="some-id"
-     flex="column nowrap justify-center items-center content-start">
-    <div id="some-child"
-         col="md6 xs12 end grow">
-    <div>
-</div>
-```
-*equals to :*
-```
-#some-child {
-    align-self: flex-end;
-    flex-grow: 1;
-    width: 100%;
-    flex-basis: 100%;
-    
-    @media screen and (min-width: $md-breakpoint) {
-        width: 50%;
-        flex-basis: 50%;
-    }
-}
-```
-***see "_flex.scss" file for complete list of values for "flex" and "col" attributes.***
-
-## Spacing
-Spacing values are all based on the $space variable defined in "_variables.scss" (default value is 1rem)
-
-Syntax for spacing value is {type}{direction}{size}.
-
-**{type}** can be :
- - m (for margin)
- - p (for padding)
-
-**{direction}** can be :
- - t (for top)
- - r (for right)
- - b (for bottom)
- - l (for left)
- - x (for left and right)
- - y (for top and bottom)
- - a (for all 4 directions)
- 
-**{size}** is an integer from 1 to 6 and corresponds, each of them corresponding to a multiplier :
- - 1 is ( $space x 0.5 )
- - 2 is ( $space x 1 )
- - 3 is ( $space x 2 )
- - 4 is ( $space x 4 )
- - 5 is ( $space x 6 )
- - 6 is ( $space x 10 )
-
-#### Customize spacing attribute :
-```
-<div id="some-id" spacing="mt1 mb3 mx4 pa2">
-    ...
-</div>
-```
-*equals to :*
-```
-#some-id {
-    padding: 1rem;
-    margin-right: 4rem;
-    margin-left: 4rem;
-    margin-top: .5rem;
-    margin-bottom: 2rem;
-}
-```
-##### note that direction a gets overridden by x and y which get overridden by t, r, b and l :
-```
-<div id="some-id" spacing="pa4 px2 pt1 pr6">
-    ...
-</div>
-```
-*equals to :*
-```
-#some-id {
-    padding: 4rem;
-    padding-right: 1rem;
-    padding-left: 1rem;
-    padding-top: .5rem;
-    padding-right: 10rem;
-}
-```
-*which results in :*
-```
-#some-id {
-    padding-bottom: 4rem;
-    padding-left: 1rem;
-    padding-top: .5rem;
-    padding-right: 10rem;
-}
-```
-## Hidden
-Apply ***display: none;*** to an element depending on screen width.
-
-Values given to ***hide-from*** attribute determine a range from one breakpoint (included) to 0 or infinite,
-depending on given direction.
-
-Syntax for hidden range value is {breakpoint}-{direction}
-
-**{breakpoint}** can be :
-- xs
-- sm
-- md
-- lg
-- xl
-
-**{direction}** can be :
-- up
-- down
-
-#### Customize hide-from attribute :
-```
-<div id="some-id" hide-from="sm-down lg-up">
-    ...
-</div>
-```
-*equals to :*
-```
-#some-id {
-    @media screen and (max-width: $md-breakpoint - 1) {
-        display: none !important;
-    }
-    @media screen and (min-width: $lg-breakpoint) {
-        display: none !important;
-    }
-}
-```
-## Grid
-###### WARNING : grid library is not supported by IE
-
-##### Add grid
-```
-<div id="some-id" grid>
-    ...
-</div>
-```
-*equals to :*
-```
-#some-id {
+#second-container {
     display: grid;
+    justify-items: flex-end;
+    justify-content: flex-end;
+    align-content: stretch;
+    align-items: center;
 }
 ```
-#### Customize grid container (grid attribute) :
-
-Syntax for grid values is {breakpoint}{nb-columns}
-
-**{breakpoint}** can be :
-- xs
-- sm
-- md
-- lg
-- xl
-
-**{nb-columns}** is an integer from 1 to 16, defining the number of columns in your grid
-
+## Flex/grid children
+Flex and grid children properties can be defined in ``data-child``.
 ```
-<div id="some-id"
-     grid="xs2 md4 xl10">
-    ...
-</div>
+<div id="first-child" data-child="alse-center shrink">...</div>
+<div id="second-child" data-child="alse-end no-grow">...</div>
+<div id="third-child" data-child="grow">...</div>
 ```
 *equals to :*
 ```
-#some-id {
-    grid template-columns: 1fr 1fr;
-
-    @media screen and (min-width: $md-breakpoint) {
-        grid template-columns: 1fr 1fr 1fr 1fr;
-    }
-    @media screen and (min-width: $xl-breakpoint) {
-        grid template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    }
+#first-child {
+    align-self: center;
+    flex-shrink: 1;
+}
+#second-child {
+    align-self: flex-end;
+    flex-grow: 0;
+}
+#third-child {
+    flex-grow: 1;
 }
 ```
 
-#### Customize grid children (cell attribute) :
+### Self justifying & aligning :
+Self alignement and justification properties are defined with the prefixes :
+- ``align-self`` : ``alse-``
+- ``justify-self`` : ``juse-`` *(Warning : ``justify-self`` is NOT a valid property of the flex layout, it'll only effect the grid layout)*
 
-Syntax for cell values is {direction}{span}
+Followed by the wanted value :
+- ``flex-start`` : ``start``
+- ``flex-end`` : ``end``
+- ``center`` : ``center``
+- ``stretch`` : ``stretch``
 
-**{direction}** can be :
-- col
-- row
-
-**{span}** is an integer from 1 to 16, defining the child's column span
-
-```
-<div id="some-id"
-     grid="xs2 md4 xl10">
-    <div id="child-id"
-         cell="col10 row2">
-    </div>
-</div>
-```
-*equals to :*
-```
-#child-id {
-    grid-column: 10 span;
-    grid-row: 2 span;
-}
-```
+### Grow and Shrink

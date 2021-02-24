@@ -1,6 +1,6 @@
 [data-flex] {display: flex;}
 [data-flex~=inline] {display: inline-flex;}
-[data-grid] {display: flex;}
+[data-grid] {display: grid;}
 [data-grid~=inline] {display: inline-grid;}
 
 [data-grid~=column] {grid-auto-flow: column;}

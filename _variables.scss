@@ -70,5 +70,6 @@ $space-multipliers: (
 /*
  * Grid
  */
+$cell-direction: (x: column, y: row);
 $max-columns: 6 !default;
 $max-rows: 6 !default;

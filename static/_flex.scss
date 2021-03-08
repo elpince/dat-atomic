@@ -1,0 +1,30 @@
+[data-flex] {display: flex;}
+[data-flex~=inline] {display: inline-flex;}
+
+[data-flex~=column] {flex-direction: column;}
+[data-flex~=row] {flex-direction: row;}
+[data-flex~=column-reverse] {flex-direction: column-reverse;}
+[data-flex~=row-reverse] {flex-direction: row-reverse;}
+
+[data-flex~=wrap] {flex-wrap: wrap;}
+[data-flex~=nowrap] {flex-wrap: nowrap;}
+[data-flex~=wrap-reverse] {flex-wrap: wrap-reverse;}
+
+[data-flex~=alit-start] {align-items: flex-start;}
+[data-flex~=alit-end] {align-items: flex-end;}
+[data-flex~=alit-center] {align-items: center;}
+[data-flex~=alit-stretch] {align-items: stretch;}
+
+[data-flex~=juco-start] {justify-content: flex-start;}
+[data-flex~=juco-end] {justify-content: flex-end;}
+[data-flex~=juco-center] {justify-content: center;}
+[data-flex~=juco-around] {justify-content: space-around;}
+[data-flex~=juco-between] {justify-content: space-between;}
+[data-flex~=juco-evenly] {justify-content: space-evenly;}
+
+[data-flex~=alco-start] {align-content: flex-start;}
+[data-flex~=alco-end] {align-content: flex-end;}
+[data-flex~=alco-center] {align-content: center;}
+[data-flex~=alco-around] {align-content: space-around;}
+[data-flex~=alco-between] {align-content: space-between;}
+[data-flex~=alco-evenly] {align-content: space-evenly;}

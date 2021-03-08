@@ -1,0 +1,23 @@
+[data-child~=alse-start] {align-self: flex-start;}
+[data-child~=alse-end] {align-self: flex-end;}
+[data-child~=alse-center] {align-self: center;}
+[data-child~=alse-stretch] {align-self: stretch;}
+
+[data-child~=juse-start] {justify-self: flex-start;}
+[data-child~=juse-end] {justify-self: flex-end;}
+[data-child~=juse-center] {justify-self: center;}
+[data-child~=juse-stretch] {justify-self: stretch;}
+
+[data-child~=no-grow] {flex-grow: 0;}
+[data-child~=grow] {flex-grow: 1;}
+
+[data-child~=no-shrink] {flex-shrink: 0;}
+[data-child~=shrink] {flex-shrink: 1;}
+
+@for $i from 1 through $max-columns {
+  @each $direction, $prop in $cell-direction {
+    [data-col~=#{$direction}#{$i}] {
+      grid-#{$prop}: span #{$i};
+    }
+  }
+}

@@ -9,7 +9,11 @@
 }
 @each $key, $value in $colors {
   [data-font~=#{$key}] { color: $value; }
+  [data-font~=h-#{$key}]:hover { color: $value; }
 }
+
+//transition
+[data-font] {transition: $text-transition}
 
 // text-transform
 [data-font~=uppercase] {text-transform: uppercase;}

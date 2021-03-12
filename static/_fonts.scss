@@ -1,6 +1,13 @@
 @each $key, $value in $font-sizes {
   [data-font~=#{$font-size-prefix}#{$key}] { font-size: #{$value}; }
 }
+@each $bp in $font-breakpoints {
+  @media (min-width: breakpoint($bp)) {
+    @each $key, $value in $font-sizes {
+      [data-font~=#{$bp}-#{$font-size-prefix}#{$key}] { font-size: #{$value}; }
+    }
+  }
+}
 @each $key, $value in $font-weights {
   [data-font~=#{$font-weight-prefix}#{$key}] { font-weight: $value; }
 }

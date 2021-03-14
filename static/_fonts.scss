@@ -49,3 +49,7 @@
 [data-font~=top] {vertical-align: top;}
 [data-font~=middle] {vertical-align: middle;}
 [data-font~=bottom] {vertical-align: bottom;}
+
+// width
+[data-font~=min] {width: min-content;}
+[data-font~=max] {width: max-content;}

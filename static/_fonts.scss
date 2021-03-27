@@ -1,3 +1,15 @@
+@function fontSize ($key) {
+  @return map_get($font-sizes, $key);
+}
+
+@function fontWeight ($key) {
+  @return map_get($font-weights, $key);
+}
+
+@function lineHeight ($key) {
+  @return map_get($line-heights, $key);
+}
+
 @each $key, $value in $font-sizes {
   [data-font~=#{$font-size-prefix}#{$key}] { font-size: #{$value}; }
 }

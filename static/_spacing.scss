@@ -1,3 +1,7 @@
+@function space ($key) {
+  @return map_get($space-multipliers, $key) * 1rem;
+}
+
 $properties-list: (
                 (margin, m),
                 (padding, p)

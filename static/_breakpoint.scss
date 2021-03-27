@@ -1,0 +1,3 @@
+@function breakpoint ($key) {
+  @return map_get($breakpoints, $key);
+}
